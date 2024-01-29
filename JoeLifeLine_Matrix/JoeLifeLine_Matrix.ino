@@ -33,10 +33,10 @@ void displaySmiley() {
   uint8_t smileBitmap[] = {
     B00111100,
     B01000010,
-    B10100101,
-    B10000001,
-    B10100101,
-    B10011001,
+    B10010101,
+    B10100001,
+    B10100001,
+    B10010101,
     B01000010,
     B00111100
   };
@@ -55,12 +55,12 @@ void displaySmiley() {
 void displayHeart(){
   uint8_t heartBitmap[] = {
     B00000000,
-    B00100100,
-    B01111110,
-    B01111110,
-    B01111110,
-    B00111100,
-    B00011000,
+    B00011100,
+    B00111110,
+    B01111100,
+    B01111100,
+    B00111110,
+    B00011100,
     B00000000
   };
   matrix.clear(); // Clear the display
@@ -76,14 +76,15 @@ void displayHeart(){
 
 void displayCamel(){
   uint8_t camelBitmap[] = {
-    B00000000,
-    B01100000,
-    B11100000,
-    B00101100,
-    B00111110,
-    B00111110,
-    B00100010,
-    B00100010,
+    B00000100,
+    B00000110,
+    B11111110,
+    B00110000,
+    B00111000,
+    B00111000,
+    B11110000,
+    B00000000
+
   };
   matrix.clear(); // Clear the display
   for (int8_t y = 0; y < 8; y++) {
